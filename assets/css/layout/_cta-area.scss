@@ -1,0 +1,44 @@
+.cta-area {
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 500px;
+    h4 {
+      text-transform: capitalize;
+      font-size: 30px;
+      font-weight: 800;
+      color: $white;
+      line-height: 46px;
+    }
+    p {
+      color: $white;
+      margin: 20px 0;
+      line-height: 28px;
+    }
+  }
+  .cta-contact {
+    background-color: $white;
+    padding: 80px 20px;
+    form {
+      input {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        border: 1px solid #ddd;
+      }
+      input[type="submit"] {
+        width: auto;
+        margin: 0 auto;
+        background-color: red;
+        color: $white;
+        display: block;
+        border: 0;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+  }
+}

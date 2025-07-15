@@ -1,0 +1,48 @@
+.header-area {
+  padding: 20px 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.3s;
+  &.sticky {
+    background-color: $black;
+    position: fixed;
+    top: 0;
+    .logo {
+      display: none;
+    }
+    .header-menu {
+      padding: 0;
+      ul {
+        border: 0;
+      }
+    }
+  }
+  .logo {
+    a {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .header-menu {
+    padding: 20px 0 0 0;
+    ul {
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      padding: 8px 0;
+      li {
+        margin: 0 10px;
+        a {
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: 600;
+          color: $white;
+        }
+      }
+    }
+  }
+}

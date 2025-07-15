@@ -1,0 +1,30 @@
+.banner-area {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 400;
+      color: $white;
+    }
+    h2 {
+      font-size: 40px;
+      text-transform: capitalize;
+      color: $white;
+      margin: 20px 0;
+    }
+    p {
+      padding-bottom: 30px;
+      color: $white;
+      font-size: 15px;
+    }
+  }
+}

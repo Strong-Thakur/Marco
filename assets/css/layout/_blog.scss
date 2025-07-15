@@ -1,0 +1,40 @@
+.blog-area {
+  .single-blog {
+    img {
+      width: 100%;
+    }
+    a {
+      display: inline-block;
+      background-color: $black;
+      color: $white;
+      margin: 20px 0;
+      padding: 5px 10px;
+      color: $white;
+      font-size: 13px;
+      text-transform: capitalize;
+    }
+    h4 {
+      font-size: 20px;
+      text-transform: capitalize;
+      line-height: 25px;
+    }
+    p {
+      margin: 10px 0;
+    }
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      a {
+        background-color: #fff;
+        color: #333;
+        @include min-lg {
+          font-size: 12px;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

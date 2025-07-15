@@ -1,0 +1,93 @@
+.footer-area {
+  background-color: red;
+  color: $white;
+  .single-footer {
+    h4 {
+      text-transform: capitalize;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    h5 {
+      text-transform: capitalize;
+      font-size: 15px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      @include min-md {
+        font-size: 10px;
+      }
+      span {
+        float: right;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .tel {
+      color: $white;
+      margin-bottom: 10px;
+      display: block;
+    }
+    form {
+      position: relative;
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 14px;
+        color: $black;
+        text-transform: capitalize;
+        border-radius: 50px;
+        border: none;
+      }
+      i {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: tomato;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 14px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+// Footer Bottom CSS
+.footer-bottom {
+  background-color: $black;
+  color: $white;
+  .copy-write {
+    text-transform: capitalize;
+    p {
+      padding-top: 12px;
+      @include min-sm {
+        text-align: center;
+      }
+      @include min-md {
+        text-align: center;
+      }
+    }
+  }
+  .footer-social {
+    padding-top: 10px;
+    ul {
+      @include min-sm {
+        justify-content: center;
+      }
+      @include min-md {
+        justify-content: center;
+      }
+      li {
+        a {
+          color: $white;
+          display: inline-block;
+          background-color: #000;
+          padding: 10px 20px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

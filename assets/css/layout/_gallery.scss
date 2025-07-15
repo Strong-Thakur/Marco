@@ -1,0 +1,37 @@
+.customer-gallery {
+  background-color: #ddd;
+  .gallery-menu {
+    background-color: $white;
+    border-radius: 10px;
+    ul {
+      li {
+        text-transform: capitalize;
+        padding: 20px 40px;
+        cursor: pointer;
+        border-right: 1px solid #ddd;
+        @include min-sm {
+          padding: 10px;
+          font-size: 13px;
+        }
+        @include min-md {
+          padding: 10px 12px;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+      }
+      .active {
+        background-color: red;
+        color: $white;
+      }
+    }
+  }
+  .gallery-content {
+    a {
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

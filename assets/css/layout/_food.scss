@@ -1,0 +1,46 @@
+.food-area {
+  background-color: $gray;
+  .food-menu {
+    background-color: $white;
+    border-radius: 10px;
+    ul {
+      li {
+        text-transform: capitalize;
+        padding: 20px 40px;
+        cursor: pointer;
+        border-right: 1px solid #ddd;
+        @include min-sm {
+          padding: 10px;
+          font-size: 13px;
+        }
+        @include min-md {
+          padding: 10px 13px;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+      }
+      .active {
+        background-color: red;
+        color: $white;
+      }
+    }
+  }
+  .food-content {
+    background-color: $white;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    h4 {
+      text-transform: capitalize;
+      font-size: 20px;
+      span {
+        float: right;
+        color: tomato;
+      }
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+}
